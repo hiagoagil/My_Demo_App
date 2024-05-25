@@ -1,4 +1,4 @@
-const path = require('path')   // aqui 
+const path = require('path')   // <-
 exports.config = {
     //
     // ====================
@@ -22,7 +22,7 @@ exports.config = {
     // of the config file unless it's absolute.
     //
     specs: [
-        './test/specs/**/*spec.js' // aqui 
+        './test/specs/**/*spec.js' // < -- 
     ],
     // Patterns to exclude.
     exclude: [
@@ -57,8 +57,8 @@ exports.config = {
         'appium:deviceName': 'teste2',
         'appium:automationName': 'UIAutomator2',
         'appium:app': path.join(process.cwd(), 'app/android/labs.apk'),
-        'appium:appPackage': 'com.saucelabs.mydemoapp.android', //aqui
-        'appium:appActivity': 'com.saucelabs.mydemoapp.android.view.activities.SplashActivity' //aqui
+        'appium:appPackage': 'com.saucelabs.mydemoapp.android', // <--
+        'appium:appActivity': 'com.saucelabs.mydemoapp.android.view.activities.SplashActivity' //<--
     }],
 
     //
